@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: hwb(0 0% 100%);
+            cursor: pointer;
+        }
+
+        hr {
+            margin: 20px 0;
+
+        }
+        .contact-form{
+            margin: 10px 20px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 2px;
+            font-family: bold;
+            font-weight: 400;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        .contact-form-2{
+            margin: 10px 20px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 2px;
+            font-family: bold;
+            font-weight: 400;
+            font-size: 19px;
+            border-radius: 20px;
+
+        }
+        .text{
+            display: flex;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 20px;
+            
+            
+
+        }
+        textarea {
+            resize: none;
+            margin-bottom: 10px;
+        }
+        .your-text{
+            margin-top: 30px;
+            display: flex;
+            
+        }
+        .submit-button{
+            padding: 7px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            transition: all 0.3s;
+            
+        }
+        .submit-button:hover{
+            color: rgb(255, 255, 255);
+            background-color: rgb(100, 100, 100);
+            
+        }
+        
+
+
+  
+       
+
+
+
+
+
+
+
+
+        @media screen and (orientation: portrait) {
+            .container {
+                max-width: 350px;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <h1>Get in Touch</h1>
+        <hr>
+
+
+        <form name="Contact" method="POST" data-netlify="true">
+            <label>Name <input type="text" name="name" placeholder="Enter your Name" class="contact-form"></label><br>
+            <label>Email <input type="email" name="email" placeholder="Enter your Email Address" class="contact-form-2"></label><br>
+            <!-- <label>Your Text <input type="text" placeholder="Enter your Text " class="text-area"></label> -->
+
+            <label class="your-text">Your Text <textarea name="message" class="text" placeholder="Enter your message "></textarea></label>
+
+             
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+
+
+
+
+
+
+</body>
+
+</html>
